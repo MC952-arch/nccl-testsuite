@@ -1,4 +1,4 @@
-ROOT_PATH=$(readlink -f "$0")
+ROOT_PATH=$(dirname "$(readlink -f "$0")")
 
 # Make sure all submodules have been cloned, if not
 # git submodule init && git submodule update
